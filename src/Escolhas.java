@@ -7,7 +7,7 @@ public class Escolhas {
 
     public boolean escolher(int escolha) {
 
-        double A,B,C,result;
+        double A,B,C,D,diferenca,vlrPrato,vlrBolsa,vlrVista,vlrParcela,vlrDividido,kg,result;
 
         switch (questao) {
             case 1:
@@ -125,7 +125,57 @@ public class Escolhas {
 
                 return true;
             case 3:
-                    
+                System.out.println("Calcular a difereça entre (A,B,C,D)");
+
+                System.out.println("Digite o valor de A");
+                A = sc.nextDouble();
+
+                System.out.println("Digite o valor de B");
+                B = sc.nextDouble();
+
+                System.out.println("Digite o valor de C");
+                C = sc.nextDouble();
+
+                System.out.println("Digite o Valor de D");
+                D = sc.nextDouble();
+
+                diferenca = (A * B) - (C * D);
+
+                System.out.printf("A diferença entre eles é %.2f",diferenca);
+                return true;
+
+            case 4:
+                vlrPrato = 23.00;    
+
+                System.out.println("Calcular quanto o cliente irá pagar no seu prato!!");
+
+                System.out.println("Digite a kilograma do prtao!!");
+                kg = sc.nextDouble();
+
+                result = vlrPrato * kg;
+
+                System.out.printf("o valor final será $.2f",result);
+
+                return true;
+
+            case 5:
+
+                System.out.println("Olá Dona Maria insira o valor da sua Bolsa!!");
+                vlrBolsa = sc.nextDouble();
+                
+                vlrVista = vlrBolsa * 0.90;
+
+                vlrParcela = vlrBolsa / 2;
+
+                vlrDividido = (vlrBolsa * 0.05) + vlrBolsa;
+
+                vlrDividido = vlrDividido / 10;
+
+                System.out.printf("Se pagar a vista vc pagará %.2f\n",vlrVista);
+
+                System.out.printf("Se parcelado em duas vezes %.2f\n",vlrParcela);
+
+                System.out.printf("Se dividido em 10 vezes %.2f\n",vlrDividido);
 
 
                 return true;

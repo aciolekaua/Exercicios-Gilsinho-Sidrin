@@ -9,8 +9,6 @@ public class App {
         while(val == false) {
             int opc = esc.menu();
             val = esc.escolher(opc);
-        }  
-        
-
+        } 
     }
 }
