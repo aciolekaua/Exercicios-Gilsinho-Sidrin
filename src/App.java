@@ -9,7 +9,7 @@ public class App {
         System.out.println("");
 
         Escolhas esc = new Escolhas();
-
+      
         boolean vlr = false;
 
         while(vlr == false) {
