@@ -1,8 +1,6 @@
 public class Peca {
-    int codigo;
-    int qtd;
-    double valor;
-    double result;
+    int codigo,qtd;
+    double valor,result;
 
     public void vlrUni(){
         for(int i = 0; i <= qtd; i++) {
